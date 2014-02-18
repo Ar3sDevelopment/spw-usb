@@ -38,4 +38,4 @@ exports.manage_post = function(post, cb) {
 
 exports.updatetime = 60 * 60 * 1000;
 exports.title = 'USB Devices';
-exports.columns = 6;
+exports.columns = 4;
