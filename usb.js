@@ -5,7 +5,7 @@ exports.data = function(cb) {
 		devices : []
 	};
 
-	exec("lsusb", function(err, stdout, stderr) {
+	exec("lsusb", function(err, stdout) {
 		if (!err) {
 			var devicesInfo = stdout.split(/[\r\n]{1,2}/);
 			for (var c = 0; c < devicesInfo.length; c++) {
@@ -36,6 +36,6 @@ exports.manage_post = function(post, cb) {
 	cb(0, null);
 };
 
-exports.updatetime = 1 * 60 * 60 * 1000;
+exports.updatetime = 60 * 60 * 1000;
 exports.title = 'USB Devices';
 exports.columns = 6;
