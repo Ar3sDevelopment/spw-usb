@@ -35,3 +35,7 @@ exports.data = function(cb) {
 exports.manage_post = function(post, cb) {
 	cb(0, null);
 };
+
+exports.updatetime = 1 * 60 * 60 * 1000;
+exports.title = 'USB Devices';
+exports.columns = 6;
