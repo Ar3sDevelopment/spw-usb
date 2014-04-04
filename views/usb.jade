@@ -20,6 +20,6 @@ script(type="text/javascript").
 
 	$(document).ready(function () {
 		setTimeout(function () {
-			$.startUpdatingWidgetJson(socket, #{user_widget.id}, '#{sid}', callbackUSBFunc, null);
+			$.startUpdatingWidgetJson(socket, #{user_widget.id}, '#{username}', callbackUSBFunc, null);
 		}, #{user_widget.widget.updatetime});
 	});
